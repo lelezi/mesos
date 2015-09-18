@@ -108,6 +108,8 @@ public:
         task.mutable_slave_id()->MergeFrom(offer.slave_id());
         task.mutable_executor()->MergeFrom(executor);
 
+        task.mutable_command()->set_value("/home/lzc/work/tmp/a.out");
+
         Option<Resources> resources =
           remaining.find(TASK_RESOURCES.flatten(role));
 
