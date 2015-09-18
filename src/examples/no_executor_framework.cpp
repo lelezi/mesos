@@ -121,7 +121,7 @@ public:
         task.mutable_command()->set_shell(true);
         task.mutable_command()->set_value(command);
         task.mutable_command()->mutable_uris(0)->set_value("/home/lzc/work/tmp.tar.gz");
-        xxxxx
+
 
         remaining -= taskResources;
 
